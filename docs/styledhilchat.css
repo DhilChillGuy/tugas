@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+body {
+    min-height: 100vh;
+    background-image: url(images.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.navbar {
+    width: 100%;
+    background-color: rgb(50, 111, 204);
+    color: white;
+    padding: 15px 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.str{
+    color: rgb(161, 4, 135);
+}
+.navbar .navbar-logo h1{
+    font-size: 35px;
+    color: rgb(0, 0, 0);
+    border-radius: 0.5rem;
+    padding: 0.3rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0);
+}
+.navbar ul{
+    list-style: none;
+    gap: 25px;
+    display: flex;
+}
+.navbar ul li{
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    font-weight: 300;
+}
+.navbar ul li a::before{
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    left: 0%;
+    bottom: 5px;
+    transition: 0.3s ease;
+}
+.navbar ul li a:hover{
+    color: white;
+    font-weight: 800;
+}
+.home{
+    display: flex;
+    align-items: center;
+}
+.home .isi{
+    padding: 4rem 7%;
+    max-width: 50rem;
+    border-radius: 0.5rem;
+}
+.isi a{
+    text-decoration: none;
+}
+.isi h1{
+    margin-top: 1rem;
+    font-size: 45px;
+    color: black;
+}
+.isi p{
+    font-size: 20px;
+    color: rgb(255, 255, 255, .7);
+    font-weight: 700;
+}
+.isi .pesan{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    color: rgb(0, 0, 0);
+    background-color: darkred;
+    border-radius: 0.8rem;
+    font-weight: 650;
+}
+.isi .pesan:hover{
+    color: white;
+    margin-top: 1.5rem;
+    display: inline-block;
+    padding: 0.7rem 1.3rem;
+    font-weight: 650;
+}
